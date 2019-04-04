@@ -75,7 +75,7 @@
 
 
 
-  <meta name="keywords" content="机器学习,项目流程,">
+  <meta name="keywords" content="机器学习,特征工程,">
 
 
 
@@ -88,18 +88,22 @@
 
 
 
-<meta name="description" content="机器学习项目工作流程作为一个刚刚接触Machine learning的小菜鸟来说，一开始并不是噼里啪啦的直接敲代码，机器学习的数据训练过程往往会耗费大量时间。一个很好的工作流程能帮助我们更好地使用机器学习工具来处理实际问题。">
-<meta name="keywords" content="机器学习,项目流程">
+<meta name="description" content="机器学习之特征工程坊间常说：“数据和特征决定了机器学习的上限，而模型和算法只是逼近这个上限而已”。由此可见，特征工程在机器学习中占有相当重要的地位。在实际应用当中，可以说特征工程是机器学习成功的关键。在实际应用当中，可以说特征工程是机器学习成功的关键。纵观Kaggle、KDD等国内外大大小小的比赛，每个竞赛的冠军其实并没有用到很高深的算法，大多数都是在特征工程这个环节做出了出色的工作，然后使用一些">
+<meta name="keywords" content="机器学习,特征工程">
 <meta property="og:type" content="article">
-<meta property="og:title" content="机器学习项目完整流程">
-<meta property="og:url" content="https://www.amorness.com/2019/03/22/MLfirst/index.html">
+<meta property="og:title" content="机器学习之特征工程">
+<meta property="og:url" content="https://www.amorness.com/2019/04/02/Engineering/index.html">
 <meta property="og:site_name" content="Amor Blog">
-<meta property="og:description" content="机器学习项目工作流程作为一个刚刚接触Machine learning的小菜鸟来说，一开始并不是噼里啪啦的直接敲代码，机器学习的数据训练过程往往会耗费大量时间。一个很好的工作流程能帮助我们更好地使用机器学习工具来处理实际问题。">
+<meta property="og:description" content="机器学习之特征工程坊间常说：“数据和特征决定了机器学习的上限，而模型和算法只是逼近这个上限而已”。由此可见，特征工程在机器学习中占有相当重要的地位。在实际应用当中，可以说特征工程是机器学习成功的关键。在实际应用当中，可以说特征工程是机器学习成功的关键。纵观Kaggle、KDD等国内外大大小小的比赛，每个竞赛的冠军其实并没有用到很高深的算法，大多数都是在特征工程这个环节做出了出色的工作，然后使用一些">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-03-22T08:19:28.998Z">
+<meta property="og:image" content="https://www.amorness.com/2019/04/02/Engineering/特征工程思维导图.jpg">
+<meta property="og:image" content="https://www.amorness.com/2019/04/02/Engineering/特征选择.png">
+<meta property="og:image" content="https://www.amorness.com/2019/04/02/Engineering/正则.jpg">
+<meta property="og:updated_time" content="2019-04-04T01:48:31.671Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="机器学习项目完整流程">
-<meta name="twitter:description" content="机器学习项目工作流程作为一个刚刚接触Machine learning的小菜鸟来说，一开始并不是噼里啪啦的直接敲代码，机器学习的数据训练过程往往会耗费大量时间。一个很好的工作流程能帮助我们更好地使用机器学习工具来处理实际问题。">
+<meta name="twitter:title" content="机器学习之特征工程">
+<meta name="twitter:description" content="机器学习之特征工程坊间常说：“数据和特征决定了机器学习的上限，而模型和算法只是逼近这个上限而已”。由此可见，特征工程在机器学习中占有相当重要的地位。在实际应用当中，可以说特征工程是机器学习成功的关键。在实际应用当中，可以说特征工程是机器学习成功的关键。纵观Kaggle、KDD等国内外大大小小的比赛，每个竞赛的冠军其实并没有用到很高深的算法，大多数都是在特征工程这个环节做出了出色的工作，然后使用一些">
+<meta name="twitter:image" content="https://www.amorness.com/2019/04/02/Engineering/特征工程思维导图.jpg">
 
 
 
@@ -129,7 +133,7 @@
 
 
 
-  <link rel="canonical" href="https://www.amorness.com/2019/03/22/MLfirst/">
+  <link rel="canonical" href="https://www.amorness.com/2019/04/02/Engineering/">
 
 
 
@@ -144,7 +148,7 @@
   </script>
 
 
-  <title>机器学习项目完整流程 | Amor Blog</title>
+  <title>机器学习之特征工程 | Amor Blog</title>
   
 
 
@@ -313,7 +317,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://www.amorness.com/2019/03/22/MLfirst/">
+    <link itemprop="mainEntityOfPage" href="https://www.amorness.com/2019/04/02/Engineering/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="JIE YU">
@@ -330,7 +334,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">机器学习项目完整流程</h1>
+          <h1 class="post-title" itemprop="name headline">机器学习之特征工程</h1>
         
 
         <div class="post-meta">
@@ -343,8 +347,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-03-22T15:20:49+08:00">
-                2019-03-22
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-04-02T15:44:03+08:00">
+                2019-04-02
               </time>
             
 
@@ -394,7 +398,7 @@
 
           
           
-             <span id="/2019/03/22/MLfirst/" class="leancloud_visitors" data-flag-title="机器学习项目完整流程">
+             <span id="/2019/04/02/Engineering/" class="leancloud_visitors" data-flag-title="机器学习之特征工程">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -426,32 +430,97 @@
       
 
       
-        <h1 id="机器学习项目工作流程"><a href="#机器学习项目工作流程" class="headerlink" title="机器学习项目工作流程"></a>机器学习项目工作流程</h1><p>作为一个刚刚接触Machine learning的小菜鸟来说，一开始并不是噼里啪啦的直接敲代码，机器学习的数据训练过程往往会耗费大量时间。一个很好的工作流程能帮助我们更好地使用机器学习工具来处理实际问题。</p>
+        <h1 id="机器学习之特征工程"><a href="#机器学习之特征工程" class="headerlink" title="机器学习之特征工程"></a>机器学习之特征工程</h1><p>坊间常说：“<strong>数据和特征决定了机器学习的上限，而模型和算法只是逼近这个上限而已</strong>”。由此可见，特征工程在机器学习中占有相当重要的地位。在实际应用当中，可以说特征工程是机器学习成功的关键。在实际应用当中，可以说特征工程是机器学习成功的关键。纵观Kaggle、KDD等国内外大大小小的比赛，每个竞赛的冠军其实并没有用到很高深的算法，大多数都是在特征工程这个环节做出了出色的工作，然后使用一些常见的算法，比如LR，就能得到出色的性能。遗憾的是，在很多的书籍中并没有直接提到特征工程，更多的是<strong>特征选择</strong>。</p>
 <a id="more"></a>
-<h2 id="1-抽象为数学问题"><a href="#1-抽象为数学问题" class="headerlink" title="1.抽象为数学问题"></a>1.抽象为数学问题</h2><p>理解实际需要处理的问题是机器学习的第一步，机器学习中的特征工程和模型训练都需要耗费大量的时间，深入理解要处理的问题，从整体框架上构思，能够让我们避免走很多弯路。理解问题，主要包括明确可以获得的数据，以及我们的目标是什么。</p>
-<p>机器学习的目标通常可以分为<strong>回归</strong>、<strong>分类</strong>、<strong>聚类</strong>。如果都不是，我们则需要考虑把它转换成机器学习问题。</p>
-<h2 id="2-获取数据"><a href="#2-获取数据" class="headerlink" title="2.获取数据"></a>2.获取数据</h2><p>获取数据主要包括<strong>获取原始数据</strong>以及<strong>经过特征工程后提取的训练数据、测试数据</strong>。”<strong>数据决定机器学习结果的上限，而算法只是尽可能的逼近这个上限</strong>“，可见数据对于机器学习的重要性。</p>
-<p>总的来说，数据要具有<strong>“代表性”</strong>，否则数据会存在<strong>过拟合(overfitting)</strong>。对于分类问题，数据偏斜不能过于严重，不同类别的数据不要有数个数量级的差距。不仅如此，还要对<strong>数据的量级</strong>有一个评估，有多少的样本，有多少个特征，从中可以估算出对<strong>内存</strong>的消耗程度，判断训练过程中内存是否能够放得下。</p>
-<p>如果数据量太大可以考虑<strong>减少训练样本</strong>、<strong>改进算法</strong>或者一些<strong>降维</strong>的方法。如果数据量实在太大，导致前面一些方法都不能有所改进，就只能考虑<strong>分布式</strong>了。</p>
-<h2 id="3-特征工程"><a href="#3-特征工程" class="headerlink" title="3.特征工程"></a>3.特征工程</h2><p>良好的数据要是能够提取出良好的特征才能真正发挥作用。</p>
-<p>特征工程是一个非常能体现机器学习者功底的过程。特征工程包括从原始数据中<strong>特征构建、特征提取、特征选择</strong>。深入理解实际业务场景下的问题，丰富的机器学习经验能帮助我们更好的处理特征工程。特征工程做得好，往往能够使得算法的效果和性能得到显著的提升，有时能使简单的模型的效果比复杂的模型效果好。</p>
-<p><strong>数据预处理、数据清洗</strong>是很关键的步骤，往往能够使得算法的效果和性能得到显著提高。<strong>归一化、离散化、因子化、缺失值处理、去除共线性</strong>等，数据挖掘过程中很多时间就花在它们上面。这些工作简单可复制，收益稳定可预期，是机器学习的基础必备步骤。</p>
-<p><strong>筛选出显著特征、摒弃非显著特征</strong>，需要机器学习工程师反复理解业务。这对很多结果有决定性的影响。特征选择需要运用特征有效性分析的相关技术，如<strong>相关系数、卡方检验、平均互信息、条件熵、后验概率、逻辑回归权重</strong>等方法。</p>
-<h2 id="4-模型训练、诊断、调优"><a href="#4-模型训练、诊断、调优" class="headerlink" title="4.模型训练、诊断、调优"></a>4.模型训练、诊断、调优</h2><p>现在有很多的机器学习算法的工具包，例如sklearn，使用非常方便，<strong>真正考验水平的是根据对算法的理解调节（超）参数，使模型达到最优</strong>。</p>
-<p><strong>过拟合、欠拟合</strong>的模型状态判断是模型诊断中至关重要的一步。常见的方法如：<strong>交叉验证，绘制学习曲线</strong>等。过拟合的基本调优思路是<strong>增加训练的数据量，降低模型复杂度</strong>。欠拟合的基本调优思路是<strong>提高特征数量和质量，增加模型复杂度</strong>。 </p>
-<p>诊断后的模型需要进行进一步调优，调优后的新模型需要重新诊断，这是一个反复迭代不断逼近的过程，需要不断的尝试，进而达到最优的状态。</p>
-<h2 id="5-模型验证、误差分析"><a href="#5-模型验证、误差分析" class="headerlink" title="5.模型验证、误差分析"></a>5.模型验证、误差分析</h2><p><strong>模型验证</strong>和<strong>误差分析</strong>也是机器学习中非常重要的一步。</p>
-<p>通过测试数据，验证模型的有效性，通过观察误差样本，分析误差产生的原因（是<strong>参数</strong>的问题还是<strong>算法选择</strong>的问题，是<strong>特征</strong>的问题还是<strong>数据</strong>本身的问题 …），往往能使得我们找到提升算法性能的突破点。</p>
-<p>误差分析主要是分析出误差来源于<strong>算法 、特征 、数据</strong>。</p>
-<h2 id="6-模型融合"><a href="#6-模型融合" class="headerlink" title="6.模型融合"></a>6.模型融合</h2><p>一般来说实际中，成熟的机器算法也就那么一些。工程上，提升算法的准确度主要方法是模型的前端（<strong>特征工程、清洗、预处理、采样</strong>）和后端的模型融合。因为他们比较标准可复制，效果比较稳定。而直接调参的工作不会很多，毕竟大量数据训练起来太慢了，而且效果难以保证。</p>
-<p>模型融合的方法，主要包括一人一票的<strong>统一融合，线性融合和堆融合</strong>。</p>
-<p>在机器学习中模型融合非常常见，基本都能使得效果有一定的提升，而且效果很好。</p>
-<h2 id="7-上线运行"><a href="#7-上线运行" class="headerlink" title="7.上线运行"></a>7.上线运行</h2><p>这一部分内容主要跟工程实现的相关性比较大。工程上是结果导向，模型在线上运行的效果直接决定模型的成败。不单纯包括其<strong>准确程度、误差</strong>等情况，还包括其<strong>运行的速度(时间复杂度)、资源消耗程度（空间复杂度）、稳定性</strong>是否可接受。</p>
+<p>本文主要通过以下三个问题出发来理解特征工程：</p>
+<ul>
+<li>特征工程是什么？</li>
+<li>为什么要做特征工程？</li>
+<li>应该如何做特征工程？ </li>
+</ul>
 <hr>
-<p>这些工作流程主要是工程实践上总结出的一些经验，并不是每个项目都包含完整的一个流程。这里的部分只是一个指导性的说明，只有大家自己多实践，多积累项目经验，才会有自己更深刻的认识。 </p>
-<h3 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h3><p>机器学习项目流程 <a href="http://www.cnblogs.com/wxquare/p/5484690.html" target="_blank" rel="noopener">http://www.cnblogs.com/wxquare/p/5484690.html</a></p>
-<p>一个完整机器学习项目流程总结<a href="https://www.jianshu.com/p/ecb89148ed64" target="_blank" rel="noopener">https://www.jianshu.com/p/ecb89148ed64</a></p>
-<p>完整机器学习项目的工作流程<a href="https://ask.julyedu.com/question/7013" target="_blank" rel="noopener">https://ask.julyedu.com/question/7013</a></p>
+<h2 id="特征工程是什么？"><a href="#特征工程是什么？" class="headerlink" title="特征工程是什么？"></a>特征工程是什么？</h2><p>当你想要你的预测模型性能达到最佳时，你要做的不仅是要选取最好的算法，还要尽可能的从原始数据中获取更多的信息。那么问题来了，你应该如何为你的预测模型得到更好的数据呢？</p>
+<p>想必到了这里你也应该猜到了，是的，这就是特征工程要做的事，它的目的就是<strong>获取更好的训练数据。</strong></p>
+<p>那么，到底什么是特征工程？我们知道，数据是信息的载体，但是原始的数据包含了大量的噪声，信息的表达也不够简练。<strong>特征工程是利用数据领域的相关知识来创建能够使机器学习算法达到最佳性能的特征的过程</strong>。使用特征表示的信息，信息损失较少，原始数据中包含的规律依然保留。此外，特征还需要尽量减少原始数据中的不确定因素（白噪声、异常数据、数据缺失…等等）的影响。</p>
+<hr>
+<p>下面是前人总结的关于特征工程的思维导图：</p>
+<p><img src="/2019/04/02/Engineering/特征工程思维导图.jpg" alt="Features"></p>
+<hr>
+<h2 id="特征工程的重要性"><a href="#特征工程的重要性" class="headerlink" title="特征工程的重要性"></a>特征工程的重要性</h2><p>为什么在实际工作中都要有特征工程这个过程，下面不同的角度来分析一下。</p>
+<p>首先，我们大家都知道，数据特征的选择会直接影响我们模型的预测性能。你可以这么说：“选择的特征越好，最终得到的性能也就越好”。这句话说得没错，但也会给我们造成误解。事实上，你得到的实验结果取决于你<strong>选择的模型</strong>、<strong>获取的数据</strong>以及<strong>使用的特征</strong>，甚至你问题的形式和你用来评估精度的客观方法也扮演了一部分。此外，你的实验结果还受到许多相互依赖的属性的影响，你需要的是能够很好地描述你数据内部结构的好特征。</p>
+<p><strong>（1）特征越好，灵活性越强</strong></p>
+<p>只要特征选得好，即使是一般的模型（或算法）也能获得很好的性能，因为大多数模型（或算法）在好的数据特征下表现的性能都还不错。好特征的灵活性在于它允许你选择不复杂的模型，同时运行速度也更快，也更容易理解和维护。</p>
+<p><strong>（2）特征越好，构建的模型越简单</strong></p>
+<p>有了好的特征，即便你的参数不是最优的，你的模型性能也能仍然会表现的很nice，所以你就不需要花太多的时间去寻找最有参数，这大大的降低了模型的复杂度，使模型趋于简单。</p>
+<p><strong>（3）特征越好，模型的性能越出色</strong></p>
+<p>显然，这一点是毫无争议的，我们进行特征工程的最终目的就是提升模型的性能。</p>
+<hr>
+<h2 id="特征工程三个子问题"><a href="#特征工程三个子问题" class="headerlink" title="特征工程三个子问题"></a>特征工程三个子问题</h2><h3 id="特征构建"><a href="#特征构建" class="headerlink" title="特征构建"></a>特征构建</h3><p> 特征构建是指从原始数据中人工的找出一些具有物理意义的特征。需要花时间去观察原始数据，思考问题的潜在形式和数据结构，对数据敏感性和机器学习实战经验能帮助特征构建。除此之外，<strong>属性分割</strong>和<strong>结合</strong>是特征构建时常使用的方法。</p>
+<p>下面我们结合具体场景做一些简单介绍：</p>
+<h4 id="时间戳处理"><a href="#时间戳处理" class="headerlink" title="时间戳处理"></a>时间戳处理</h4><p>时间戳属性通常需要分离成多个维度比如年、月、日、小时、分钟、秒钟。通常时间序列数据会含有一定的趋势和周期性，这时需要我们去<strong>构建趋势因子和周期因子</strong>。</p>
+<h4 id="分解类别属性"><a href="#分解类别属性" class="headerlink" title="分解类别属性"></a>分解类别属性</h4><p><strong>一些属性是类别型而不是数值型</strong>，举一个简单的例子，由{红，绿、蓝}组成的颜色属性，最常用的方式是把每个类别属性转换成二元属性，即从{0,1}取一个值。因此基本上<strong>增加的属性等于相应数目的类别</strong>，并且对于你数据集中的每个实例，只有一个是1（其他的为0），这也就是<strong>独热（one-hot)编码方式</strong>。当然这个方法并不是唯一的。</p>
+<h4 id="分箱和分区"><a href="#分箱和分区" class="headerlink" title="分箱和分区"></a>分箱和分区</h4><p>有时候，<strong>将数值型属性转换成类别呈现</strong>更有意义，同时能使算法减少噪声的干扰，通过<strong>将一定范围内的数值划分成确定的块。</strong>举个例子，我们预测一个人是否拥有某款衣服，这里年龄是一个确切的因子。其实年龄组是更为相关的因子，所以我们可以将年龄分布划分成1-10,11-18,19-25,26-40等年龄段，分别表示 幼儿，青少年，青年，中年四个年龄组，让相近的年龄组表现出相似的属性。此外，我们还可以<strong>对分箱，分区做一些统计量字段作为数据的特征。</strong></p>
+<p>只有在了解属性的领域知识的基础，确定属性能够划分成简洁的范围时分区才有意义。即<strong>所有的数值落入一个分区时能够呈现出共同的特征。</strong>在实际应用中，当你不想让你的模型总是尝试区分值之间是否太近时，分区能够避免出现过拟合。例如，如果你所感兴趣的是将一个城市作为整体，这时你可以将所有落入该城市的维度值进行整合成一个整体。分箱也能减小小错误的影响，通过将一个给定值划入到最近的块中。<strong>如果划分范围的数量和所有可能值相近，或对你来说准确率很重要的话，此时分箱就不适合了。</strong></p>
+<h4 id="交叉特征"><a href="#交叉特征" class="headerlink" title="交叉特征"></a>交叉特征</h4><p>交叉特征是特征工程中重要的方法之一，交叉特征是一种很独特的方式，它<strong>将两个或更多的类别属性组合成一个。</strong>当组合的特征要比单个特征更好时，这是一项非常有用的技术。数学上来说，是<strong>对类别特征的所有可能值进行交叉相乘。</strong>当然我们不仅仅会去查找交叉项关系，还可以去寻找更加复杂的二次项，三次项乃至更复杂的关系，这根据问题求解的需要决定。</p>
+<p><strong>经度与纬度的组合便是交叉特征的应用实例，</strong>一个相同的经度对应了地图上很多的地方，纬度也是一样。但是一旦你将经度和纬度组合到一起，它们就代表了地理上特定的一块区域，区域中每一部分是拥有着类似的特性</p>
+<hr>
+<h3 id="特征提取"><a href="#特征提取" class="headerlink" title="特征提取"></a>特征提取</h3><p>原始数据常常是高维的，其中包含了许多冗余信息或者十分稀疏或者计算量大，拿原始数据来训练是可行的，<strong>但是往往直接训练是低效的</strong>。所以特征提取往往是必要的。</p>
+<p>特征提取主要是为了解决下面三个问题：</p>
+<p>（1）原始数据特征中的<strong>强相关性造成的冗余信息</strong>。（2）原始数据<strong>十分稀疏</strong>。（3）原始数据<strong>维度巨大</strong>。</p>
+<p>特征提取的对象是原始数据（raw data），它的目的是<strong>自动地构建新的特征，将原始特征转换为一组具有明显物理意义（Gabor、几何特征[角点、不变量]、纹理[LBP HOG]）或者统计意义或核的特征</strong>。比如通过变换特征取值来减少原始数据中某个特征的取值个数等。对于表格数据，你可以在你设计的特征矩阵上使用主要成分分析来进行特征提取从而创建新的特征。对于图像数据，可能还包括了线或边缘检测。</p>
+<p>常见的一些特征提取的方法：</p>
+<ul>
+<li><strong>PCA主成分分析</strong></li>
+<li><strong>LDA线性判别分析</strong></li>
+<li><strong>ICA独立成分分析</strong></li>
+</ul>
+<hr>
+<h3 id="特征选择"><a href="#特征选择" class="headerlink" title="特征选择"></a>特征选择</h3><p>特征选择目的是<strong>从特征集合中挑选一组最具统计意义的特征子集，从而达到降维的效果</strong>。特征选择是剔除不相关或者冗余的特征，减少有效特征的个数，减少模型训练的时间，提高模型的精确度。特征提取通过特征转换实现降维，特征选择则是依靠统计学方法或者于机器学习模型本身的特征选择（排序）功能实现降维。特征选择是个重复迭代的过程，有时可能自己认为特征选择做的很好，但实际中模型训练并不太好，所以每次特征选择都要使用模型去验证，最终目的是为了获得能训练出好的模型的数据，提升模型的性能。</p>
+<p>特征选择过程一般包括<strong>产生过程，评价函数，停止准则，验证过程，</strong>这4个部分。如下图所示：</p>
+<p><img src="/2019/04/02/Engineering/特征选择.png" alt="process"></p>
+<p>(1) <strong>产生过程( Generation Procedure )</strong>：产生过程是搜索特征子集的过程，负责为评价函数提供特征子集。<br>(2) <strong>评价函数( Evaluation Function )</strong>：评价函数是评价一个特征子集好坏程度的一个准则。<br>(3) <strong>停止准则( Stopping Criterion )</strong>：停止准则是与评价函数相关的，一般是一个阈值，当评价函数值达到这个阈值后就可停止搜索。<br>(4) <strong>验证过程( Validation Procedure )</strong> ：在验证数据集上验证选出来的特征子集的有效性。</p>
+<hr>
+<p>通常来说，从两个方面考虑来选择特征：</p>
+<ul>
+<li>特征是否发散：如果一个特征不发散，例如方差接近于0，也就是说样本在这个特征上基本上没有差异，这个特征对于样本的区分并没有什么用。</li>
+<li>特征与目标的相关性：这点比较显见，与目标相关性高的特征，应当优选选择。</li>
+</ul>
+<p>根据特征选择的形式又可以将特征选择方法分为3种：</p>
+<ul>
+<li>Filter：过滤法，侧重于单个特征，按照发散性或者相关性对各个特征进行评分，设定阈值或者待选择阈值的个数，选择特征。</li>
+<li>Wrapper：包装法，侧重于特征子集，根据目标函数（通常是预测效果评分），每次选择若干特征，或者排除若干特征。</li>
+<li>Embedded：嵌入法，先使用某些机器学习的算法和模型进行训练，得到各个特征的权值系数，根据系数从大到小选择特征。类似于Filter方法，但是是通过训练来确定特征的优劣。</li>
+</ul>
+<h4 id="Filter"><a href="#Filter" class="headerlink" title="Filter"></a>Filter</h4><p>过滤法一般使用<strong>评价准则</strong>来选择特征，从训练数据中选择全部特征向量空间，并在此空间内进行过滤、搜索，得到在阈值范围内的特征，确定最后的特征子集，放入机器学习算法中进行建模。</p>
+<p>评价标准函数分为四类：<strong>距离度量、信息度量、依赖性度量和一致性度量</strong>。与特定的学习算法无关，所以具有良好的通用性。常用的评价标准有：方差、相关系数、卡方检验、互信息和最大信息系数。</p>
+<p>①<strong>方差</strong></p>
+<p> 方差即衡量随机变量和其数学期望之间的偏离程度，其公式如下：<br>$$<br>σ^2=∑\frac{(X−μ)^2}{N}<br>$$<br>其中$\sigma^2$为总样本方差，$X$为变量，$\mu$为总样本均值，$N$为总样本数量</p>
+<p>在特征选择中，可以默认去除方差没有达到定制标准的特征。因为如果方差很小，证明此维特征的差异性很小，则对最后结果的区分性也不是很大。</p>
+<p>②<strong>相关系数</strong></p>
+<p>Pearson相关系数衡量<strong>线性相关</strong>、Spearman相关系数衡量<strong>曲线相关</strong>、Kendall相关系数衡量两个变量<strong>观测排序的一致性</strong>。对于相关和不相关，在阈值设定上是有非常大的主观性的。<br><strong>Pearson相关系数</strong>的值介于-1到1之间，1 表示变量完全正相关，0 表示无关，-1 表示完全负相关。计算公式：<br>$$<br>r = \frac{1}{n-1}\sum_{i=1}^{n}{(\frac{X_i-\bar{X}}{S_X})(\frac{Y_i-\bar{Y}}{S_Y})}<br>$$<br>其中$\bar{X},\bar{Y}$为样本$X,Y$的平均值，$S_X,S_Y$为样本$X,Y$的标准差</p>
+<p>注意：皮尔逊相关系数只对线性的特征敏感，如果关系是非线性的，即便是两个变量有很强的一一对应关系，pearson相关系数也有可能接近0。这种情况用<strong>spearman秩相关系数</strong>则能很好的表示出这种非线性的相关性。</p>
+<p>③<strong>卡方检验</strong></p>
+<p>卡方检验是检<strong>验定性自变量</strong>和<strong>定性因变量</strong>的相关性。在检验时，先做一个假设，假设两个变量是独立的；然后根据此假设计算独立时应该的理论值；计算实际值与理论值之间的差异，从而推翻假设或者服从假设。当应用在特征选择中，不关心具体的值，所以也就不存在推翻不推翻原假设，只关心大小，然后排序。<br>$$<br>\chi^2 = \sum\frac{(A-E)^2}{E}<br>$$<br>④<strong>互信息和最大信息系数</strong></p>
+<p>互信息表示随机变量中包含另个一随机变量的信息量，例如两个随机变量（X,Y），互信息是联合分布与乘积分布的相对熵：<br>$$<br>I(X，Y)=\sum p(x,y)\log(\frac{p(x,y)}{p(x)p(y)})<br>$$</p>
+<h4 id="Wrapper"><a href="#Wrapper" class="headerlink" title="Wrapper"></a>Wrapper</h4><p>此类方法是以分类器的<strong>目标函数</strong>，即利用学习算法的性能来评价特征子集的优劣。其实可以理解为以最终模型结果驱动来选择特征子集，这里也用到了在搜索中的分类方法，通过不同的搜索方法，选择若干候选特征子集，放入模型进行实验，多次实验选择使得模型得到较优结果的特征集合作为最终的特征子集。所以，对于一个待评价的特征子集，这种方法需要训练一个分类器，<strong>根据分类器的性能对该特征子集进行评价</strong>，从而进行特征选择和特征排除，最终选择特征子集，然后使用此分类器和特征子集进行建模。</p>
+<p>Wrapper方法比Filter方法慢，但是此类方法得到的特征子集性能通常更好，但是通用性不强，改变学习算法时，需要针对特定的学习算法按照相应的指标重新选择特征子集，而且要重新训练和测试，所以对于这类方法通常计算复杂度挺高。其实每选择一次特征子集，就相当于进行了从头到尾的一次实验过程，个人认为这种是结果驱动的选择，换了训练的数据集都可能导致之前选择的特征子集失效。</p>
+<h4 id="Embedded"><a href="#Embedded" class="headerlink" title="Embedded"></a>Embedded</h4><p><strong>特征选择本身是作为学习算法的一部分，是一种集成的方法，先使用某种学习算法进行训练，然后得到各个特征的权值系数，根据系数的大小对特征进行选择</strong>。类似于Filter方法，但是要经过模型训练才能得到相应的特征权重值。例如<strong>决策树</strong>算法（ID3、C4.5、C5、CART）使用了信息增益、信息增益比、Gini系数等指标，在每一层树增长的过程中，都需要进行特征选择。<strong>线性回归算法</strong>中，通过训练得到每个特征值的权重，可以根据权重选择特征，重新训练。<strong>L1范数</strong>正则化，通过在成本或者损失函数中添加L1范数，是的学习的结果满足稀疏化，从而得到适合的特征。这里要注意的是加入L1范数的惩罚项后，没有选择的特征并不是代表不重要，所以一般<strong>结合L2范数</strong>来优化处理。若一个特征在L1中的权值为1，选择在L2中权值差别不大且在L1中权值为0的特征构成同类集合，将这一集合中的特征平分L1中的权值，故需要构建一个新的逻辑回归模型。</p>
+<p>在求解的过程中，我们往往要在平方误差项与正则化项之间折中，找出在平方误差等值线和正则化项等值线相交处。从下图中可以看出，采用L1范数的时候，与平方误差等值线的相交处经常出现在坐标轴上，也就是说得到的一些权重值(ω)为0，所以，使用L1范数的时候，我们能得到更稀疏的解[9]。Tibshirani在1996年提出的LASSO(Least Absolute Shrinkage and Selection Operator)回归就是使用L1范数。</p>
+<p><img src="/2019/04/02/Engineering/正则.jpg" width="300"></p>
+<p>局部加权回归模型（LOESS），对于区域样本使用多项式回归（Cleveland W1988）。这类局部回归有极强的适应性，可以有效得到平滑的回归趋势。</p>
+<h2 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a><strong>Conclusion</strong></h2><p>绕了这么多，下面对几个专用名字做一个总结：</p>
+<ul>
+<li>特征工程：利用数据领域的相关知识来创建能够使机器学习算法达到最佳性能的特征的过程。</li>
+<li>特征构建：是原始数据中人工的构建新的特征。</li>
+<li>特征提取：自动地构建新的特征，将原始特征转换为一组具有明显物理意义或者统计意义或核的特征。</li>
+<li>特征选择：从特征集合中挑选一组最具统计意义的特征子集，从而达到降维的效果</li>
+</ul>
+<p>特征工程是一个超集，它包括特征提取、特征构建和特征选择这三个子模块。在实践当中，每一个子模块都非常重要，忽略不得。根据经验，可以将这三个子模块的重要性进行了一个排名，即：特征构建&gt;特征提取&gt;特征选择。</p>
+<p>事实上，真的是这样，<strong>如果特征构建做的不好，那么它会直接影响特征提取，进而影响了特征选择，最终影响模型的性能</strong>。</p>
+<hr>
+<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p>机器学习之特征工程 <a href="https://www.cnblogs.com/wxquare/p/5484636.html" target="_blank" rel="noopener">https://www.cnblogs.com/wxquare/p/5484636.html</a></p>
+<p>细说特征工程  <a href="https://blog.csdn.net/m0_38024592/article/details/80836217" target="_blank" rel="noopener">https://blog.csdn.net/m0_38024592/article/details/80836217</a></p>
+<p>特征工程的概述 <a href="https://www.cnblogs.com/datasnail/p/9617480.html" target="_blank" rel="noopener">https://www.cnblogs.com/datasnail/p/9617480.html</a></p>
 
       
     </div>
@@ -500,7 +569,7 @@
           
             <a href="/tags/机器学习/" rel="tag"><i class="fa fa-tag"></i> 机器学习</a>
           
-            <a href="/tags/项目流程/" rel="tag"><i class="fa fa-tag"></i> 项目流程</a>
+            <a href="/tags/特征工程/" rel="tag"><i class="fa fa-tag"></i> 特征工程</a>
           
         </div>
       
@@ -513,15 +582,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2019/03/22/MLfirst/" rel="next" title="机器学习项目完整流程">
+                <i class="fa fa-chevron-left"></i> 机器学习项目完整流程
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/04/02/Engineering/" rel="prev" title="机器学习之特征工程">
-                机器学习之特征工程 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -589,7 +658,7 @@
           
 
   
-<iframe title="livere" src="https://was.livere.me/comment/city?id=city&refer=https://www.amorness.com/2019/03/22/MLfirst/&uid=MTAyMC80MzI5OS8xOTg0MA==&site=https://www.amorness.com/2019/03/22/MLfirst/&title=机器学习项目完整流程" scrolling frameborder="0" id="lv-comment-399" style="min-width: 100%; width: 100px; min-height: 400px; overflow: auto; border: 0px; z-index: 124212; height: 800px;"></iframe>
+<iframe title="livere" src="https://was.livere.me/comment/city?id=city&refer=https://www.amorness.com/2019/04/02/Engineering/&uid=MTAyMC80MzI5OS8xOTg0MA==&site=https://www.amorness.com/2019/04/02/Engineering/&title=机器学习之特征工程" scrolling frameborder="0" id="lv-comment-399" style="min-width: 100%; width: 100px; min-height: 400px; overflow: auto; border: 0px; z-index: 124212; height: 800px;"></iframe>
 
 
   
@@ -734,7 +803,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#机器学习项目工作流程"><span class="nav-number">1.</span> <span class="nav-text">机器学习项目工作流程</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-抽象为数学问题"><span class="nav-number">1.1.</span> <span class="nav-text">1.抽象为数学问题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-获取数据"><span class="nav-number">1.2.</span> <span class="nav-text">2.获取数据</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-特征工程"><span class="nav-number">1.3.</span> <span class="nav-text">3.特征工程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-模型训练、诊断、调优"><span class="nav-number">1.4.</span> <span class="nav-text">4.模型训练、诊断、调优</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-模型验证、误差分析"><span class="nav-number">1.5.</span> <span class="nav-text">5.模型验证、误差分析</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-模型融合"><span class="nav-number">1.6.</span> <span class="nav-text">6.模型融合</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#7-上线运行"><span class="nav-number">1.7.</span> <span class="nav-text">7.上线运行</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#参考"><span class="nav-number">1.7.1.</span> <span class="nav-text">参考</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#机器学习之特征工程"><span class="nav-number">1.</span> <span class="nav-text">机器学习之特征工程</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#特征工程是什么？"><span class="nav-number">1.1.</span> <span class="nav-text">特征工程是什么？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#特征工程的重要性"><span class="nav-number">1.2.</span> <span class="nav-text">特征工程的重要性</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#特征工程三个子问题"><span class="nav-number">1.3.</span> <span class="nav-text">特征工程三个子问题</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#特征构建"><span class="nav-number">1.3.1.</span> <span class="nav-text">特征构建</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#时间戳处理"><span class="nav-number">1.3.1.1.</span> <span class="nav-text">时间戳处理</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#分解类别属性"><span class="nav-number">1.3.1.2.</span> <span class="nav-text">分解类别属性</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#分箱和分区"><span class="nav-number">1.3.1.3.</span> <span class="nav-text">分箱和分区</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#交叉特征"><span class="nav-number">1.3.1.4.</span> <span class="nav-text">交叉特征</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#特征提取"><span class="nav-number">1.3.2.</span> <span class="nav-text">特征提取</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#特征选择"><span class="nav-number">1.3.3.</span> <span class="nav-text">特征选择</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Filter"><span class="nav-number">1.3.3.1.</span> <span class="nav-text">Filter</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Wrapper"><span class="nav-number">1.3.3.2.</span> <span class="nav-text">Wrapper</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Embedded"><span class="nav-number">1.3.3.3.</span> <span class="nav-text">Embedded</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Conclusion"><span class="nav-number">1.4.</span> <span class="nav-text">Conclusion</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参考"><span class="nav-number">1.5.</span> <span class="nav-text">参考</span></a></li></ol></li></ol></div>
             
 
           </div>
